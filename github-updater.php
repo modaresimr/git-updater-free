@@ -4,13 +4,13 @@
  *
  * @author  Andy Fragen
  * @license GPL-2.0+
- * @link    https://github.com/afragen/github-updater
- * @package github-updater
+ * @link    https://github.com/modaresimr/git-updater-free
+ * @package git-updater-free
  */
 
 /**
- * Plugin Name:       GitHub Updater
- * Plugin URI:        https://github.com/afragen/github-updater
+ * Plugin Name:       Git Updater Free
+ * Plugin URI:        https://github.com/modaresimr/git-updater-free
  * Description:       A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted plugins, themes, and language packs. It also allows for remote installation of plugins or themes into WordPress.
  * Version:           9.9.10
  * Author:            Andy Fragen
@@ -19,8 +19,7 @@
  * Domain Path:       /languages
  * Text Domain:       github-updater
  * Network:           true
- * GitHub Plugin URI: https://github.com/afragen/github-updater
- * GitHub Languages:  https://github.com/afragen/github-updater-translations
+ * GitHub Plugin URI: https://github.com/modaresimr/git-updater-free
  * Requires at least: 5.2
  * Requires PHP:      5.6
  */
