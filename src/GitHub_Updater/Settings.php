@@ -839,9 +839,6 @@ class Settings {
 			$is_broken  = $data['broken'] ? $broken : null;
 			$override   = $this->override_dot_org( $data['type'], $data );
 			$is_dot_org = $data['dot_org'] && ! $override ? $dot_org : null;
-			if ( current_user_can( "install_$data['type']s" ) ) {
-				$install_tabs['github_updater_install_plugin'] = esc_html__( 'Install Plugin', 'github-updater' );
-			}
 			
 			$update_url =current_user_can(  'install_'. $data['type']. 's' )  //install_plugins or install_themes
 				? 	add_query_arg([  
