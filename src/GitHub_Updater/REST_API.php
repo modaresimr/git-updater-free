@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -31,7 +31,7 @@ class REST_API {
 	 *
 	 * @var string
 	 */
-	public static $namespace = 'github-updater/v1';
+	public static $namespace = 'git-updater-free/v1';
 
 	/**
 	 * Register REST API endpoints.

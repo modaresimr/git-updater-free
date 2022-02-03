@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -67,8 +67,8 @@ class Init {
 			update_site_option( 'github_updater', array_merge( $options, [ 'current_branch_github-updater' => 'develop' ] ) );
 		}
 
-		if ( $slug && 'github-updater/github-updater.php' !== $slug ) {
-			@rename( $plugin_dir . dirname( $slug ), $plugin_dir . 'github-updater' );
+		if ( $slug && 'git-updater-free/git-updater-free.php' !== $slug ) {
+			@rename( $plugin_dir . dirname( $slug ), $plugin_dir . 'git-updater-free' );
 		}
 	}
 

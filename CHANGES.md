@@ -12,10 +12,10 @@
 
 #### 9.9.8 / 2021-02-01
 * fix odd return from Gitea API branch request
-* update for new URL to GitHub release asset redirect, fixes [#929](https://github.com/afragen/github-updater/issues/929)
+* update for new URL to GitHub release asset redirect, fixes [#929](https://github.com/modaresimr/git-updater-free/issues/929)
 
 #### 9.9.7 / 2021-01-11
-* fix PHP8 error in `set_branch_on_switch()`, [#925](https://github.com/afragen/github-updater/issues/925)
+* fix PHP8 error in `set_branch_on_switch()`, [#925](https://github.com/modaresimr/git-updater-free/issues/925)
 
 #### 9.9.6 / 2021-01-08
 * this fix for odd log errors, hopefully, doesn't create new errors
@@ -24,20 +24,20 @@
 * fix odd error I see in the logs
 * use GitHub Actions for CI
 * fix some docBlock settings
-* don't set branch on rollback to tag, fixes [#921](https://github.com/afragen/github-updater/issues/921)
-* temp fix to composer resource while waiting for upstream fix [#922](https://github.com/afragen/github-updater/issues/922)
+* don't set branch on rollback to tag, fixes [#921](https://github.com/modaresimr/git-updater-free/issues/921)
+* temp fix to composer resource while waiting for upstream fix [#922](https://github.com/modaresimr/git-updater-free/issues/922)
 * update some composer resources
 
 #### 9.9.4 / 2020-11-21
 * update to latest `class-parser.php` and `Readme_Parser` cleanup
 * extra testing to remove `@` ( silencing )
 * update `ghu-loader.php`
-* add API error to `debug.log` [#911](https://github.com/afragen/github-updater/issues/911)
+* add API error to `debug.log` [#911](https://github.com/modaresimr/git-updater-free/issues/911)
 * added `Gist_API` and `Language_Pack_API` to `Basic_Auth_Loader`, oops
 
 #### 9.9.3 / 2020-11-04
 * update `class-parser.php`, now allows for sending text blob as input, thanks @dd32
-* no longer need to use data URLs as potential security risk [#909](https://github.com/afragen/github-updater/issues/909)
+* no longer need to use data URLs as potential security risk [#909](https://github.com/modaresimr/git-updater-free/issues/909)
 
 #### 9.9.2 / 2020-11-03
 * add filter to modify release asset rollback, 🖕 Gutenberg
@@ -77,7 +77,7 @@
 #### 9.6.1 / 2020-06-11
 * exit early from `Gist_API::construct_download_link()` if meta not present
 * fix saved value when `Bitbucket_Server_API` tag response is empty
-* fix issue if Bitbucket API branch response is malformed, fixes [#875](https://github.com/afragen/github-updater/issues/875)
+* fix issue if Bitbucket API branch response is malformed, fixes [#875](https://github.com/modaresimr/git-updater-free/issues/875)
 * fix PHP warning in `GHU_Trait::is_duplicate_wp_cron_event` when no cron events present
 
 #### 9.6.0 / 2020-06-01
@@ -90,9 +90,9 @@
 * no need for using release asset with GHU
 
 #### 9.5.1 / 2020-05-09
-* test `Readme_Parser::__construct()` `file_put_contents()` with additional test for success, hopefully squashes [#704](https://github.com/afragen/github-updater/issues/704) once and for all, actual fix is to set constant `WP_TEMP_DIR` as appropriate
+* test `Readme_Parser::__construct()` `file_put_contents()` with additional test for success, hopefully squashes [#704](https://github.com/modaresimr/git-updater-free/issues/704) once and for all, actual fix is to set constant `WP_TEMP_DIR` as appropriate
 * prevent error if no credentials are set
-* un-screwup Bitbucket Server, sorry @allrite, fixes [#872](https://github.com/afragen/github-updater/issues/872)
+* un-screwup Bitbucket Server, sorry @allrite, fixes [#872](https://github.com/modaresimr/git-updater-free/issues/872)
 
 #### 9.5.0 / 2020-04-17
 * allow for repos using release assets to have branch switcher
@@ -138,7 +138,7 @@
 #### 9.3.0 / 2020-02-06
 * remove GitHub deprecation notice
 * transition from GitHub access token query arg to Basic Authentication
-* fixed theme update View details display [#849](https://github.com/afragen/github-updater/issues/849)
+* fixed theme update View details display [#849](https://github.com/modaresimr/git-updater-free/issues/849)
 * more fixes PHP 7.4 warnings
 * refactor from using access token endpoints to Basic Authentication headers
 
@@ -156,9 +156,9 @@
 * add `Bypass WP-Cron Background Processing` setting
 
 #### 9.2.0 / 2020-01-21
-* fix PHP warning [#823](https://github.com/afragen/github-updater/issues/823), thanks @pbiron
+* fix PHP warning [#823](https://github.com/modaresimr/git-updater-free/issues/823), thanks @pbiron
 * remove scheduled cron events on deactivation
-* added function to rename or recursively copy from `$source` to `$destination` and remove files/directories after copying. Should be more versatile than `$wp_filesystem->move()`. Fixes [#826](https://github.com/afragen/github-updater/issues/826)
+* added function to rename or recursively copy from `$source` to `$destination` and remove files/directories after copying. Should be more versatile than `$wp_filesystem->move()`. Fixes [#826](https://github.com/modaresimr/git-updater-free/issues/826)
 * no longer any need to manipulate release assets in `upgrader_source_selection`
 * test for correct REST API key for `repos` endpoint
 * add local version to `repos` REST endpoint, thanks @Raruto
@@ -170,7 +170,7 @@
 * only show Settings for privileged users
 
 #### 9.0.1 / 2019-12-04
-* fix PHP version check, fixes [#824](https://github.com/afragen/github-updater/issues/824)
+* fix PHP version check, fixes [#824](https://github.com/modaresimr/git-updater-free/issues/824)
 
 #### 9.0.0 / 2019-11-19
 * refactor to remove class extends
@@ -191,13 +191,13 @@
 * fix multisite saving of Remote Management settings
 
 #### 8.8.2 / 2019-07-02
-* added check for `Basic_Auth_Loader::get_credentials()` to match `$slug` and `$git`, fixes edge case [#796](https://github.com/afragen/github-updater/issues/796)
+* added check for `Basic_Auth_Loader::get_credentials()` to match `$slug` and `$git`, fixes edge case [#796](https://github.com/modaresimr/git-updater-free/issues/796)
 * refactored `Basic_Auth_Loader::get_credentials()` to split out `Basic_Auth_Loader::get_slug_for_credentials()` and `Basic_Auth_Loader::get_type_for_credentials()`
 * created more precise adding and removing `Basic_Auth_Loader` hooks
 * fixed `Bitbucket_API` return when no tags found
 
 #### 8.8.1 / 2019-06-11
-* set `homepage` to `PluginURI` or `ThemeURI`, fixes [#791](https://github.com/afragen/github-updater/issues/791)
+* set `homepage` to `PluginURI` or `ThemeURI`, fixes [#791](https://github.com/modaresimr/git-updater-free/issues/791)
 * fixed Bitbucket release asset updates for proper containing folder structure, thanks @benoitchantre for the bug report
 
 #### 8.8.0 / 2019-05-15
@@ -207,12 +207,12 @@
 * use `GITHUB_UPDATER_DIR` constant for all enqueuing
 
 #### 8.7.3 / 2019-04-08
-* fixed PHP notices on Install [#775](https://github.com/afragen/github-updater/issues/775)
+* fixed PHP notices on Install [#775](https://github.com/modaresimr/git-updater-free/issues/775)
 * updated location of `tmp-readme.txt` file to use `get_temp_dir()`, thanks @DavidAnderson684
 * a11y updates for `label for=...`
-* fixed to only set cron event for main site only when `DISABLE_WP_CRON` is set, fixes [#782](https://github.com/afragen/github-updater/issues/782)
+* fixed to only set cron event for main site only when `DISABLE_WP_CRON` is set, fixes [#782](https://github.com/modaresimr/git-updater-free/issues/782)
 * a11y updates for settings tabs
-* remove filter for `http_request_args` after use, fixes [#783](https://github.com/afragen/github-updater/issues/783)
+* remove filter for `http_request_args` after use, fixes [#783](https://github.com/modaresimr/git-updater-free/issues/783)
 
 #### 8.7.2 / 2019-03-09
 * hotfix to add parity for themes and prevent PHP warning
@@ -226,7 +226,7 @@
 
 #### 8.7.0 / 2019-02-24
 * update `Readme_Parser` for changelog and description parsing
-* add filter `github_updater_temp_readme_filepath` to change default location if server has permissions issues, fixes [#766](https://github.com/afragen/github-updater/issues/766)
+* add filter `github_updater_temp_readme_filepath` to change default location if server has permissions issues, fixes [#766](https://github.com/modaresimr/git-updater-free/issues/766)
 * fix `Readme_Parser` to use `version_compare()` when checking compatibility with `create_contributors()`
 * add commit hash and timestamp to branch data, timestamp not returned by this particular GitHub API call 😞
 * add filter `github_updater_remote_is_newer` to use your own version comparison function
@@ -235,21 +235,21 @@
 * use Update PHP messaging as in WP 5.1 in version check
 
 #### 8.6.2 / 2019-01-14
-* fix for bug with Bitbucket endpoints, fixes [#757](https://github.com/afragen/github-updater/issues/757)
+* fix for bug with Bitbucket endpoints, fixes [#757](https://github.com/modaresimr/git-updater-free/issues/757)
 
 #### 8.6.1 / 2019-01-11
-* remove `tmp-readme.txt` after parsing, fixes [#754](https://github.com/afragen/github-updater/issues/754)
+* remove `tmp-readme.txt` after parsing, fixes [#754](https://github.com/modaresimr/git-updater-free/issues/754)
 * directly call `wp_cron()` after refreshing cache
 * update POT via `composer.json` and wp-cli
 * moved `get_file_headers()` to `trait GHU_Trait`
 * cleanup extra header key/value pairs
-* add endpoint to Bitbucket to get more than default number of tags, branches, or release assets. Fixes [#752](https://github.com/afragen/github-updater/issues/752) thanks @idpaterson
+* add endpoint to Bitbucket to get more than default number of tags, branches, or release assets. Fixes [#752](https://github.com/modaresimr/git-updater-free/issues/752) thanks @idpaterson
 
 #### 8.6.0 / 2018-12-28 🎂
 * add action hook `github_updater_post_rest_process_request` for @Raruto
 * add filter hook `github_updater_set_rollback_package` for @sc0ttclark and @moderntribe
-* return null for `API_Common::parse_release_asset()` when invalid `$response`, fixes [#750](https://github.com/afragen/github-updater/issues/750)
-* make GitHub private repos with release assets use redirect for download link, fixes [#751](https://github.com/afragen/github-updater/issues/751)
+* return null for `API_Common::parse_release_asset()` when invalid `$response`, fixes [#750](https://github.com/modaresimr/git-updater-free/issues/750)
+* make GitHub private repos with release assets use redirect for download link, fixes [#751](https://github.com/modaresimr/git-updater-free/issues/751)
 
 #### 8.5.2 / 2018-12-10
 * fixed parsing of wp.org readme changelog items
@@ -284,11 +284,11 @@
 * attempted to update `class Bitbucket_Server_API`, please let me know if I made 💩
 * refactor release asset and AWS download link code
 * use action hook `requests-requests.before_redirect` to get AWS redirect URL
-* fix for [creating proper GitHub Enterprise base URL](https://github.com/afragen/github-updater/pull/721), oops. Thanks @rlindner
-* fixed [#714](https://github.com/afragen/github-updater/issues/714), get correct Bitbucket release asset download link from AWS
+* fix for [creating proper GitHub Enterprise base URL](https://github.com/modaresimr/git-updater-free/pull/721), oops. Thanks @rlindner
+* fixed [#714](https://github.com/modaresimr/git-updater-free/issues/714), get correct Bitbucket release asset download link from AWS
 * update to `class-parser.php` r7679
 * don't run on heartbeat API 💗
-* only run on `admin-ajax.php` when possibly attempting sequential shiny updates, fixes [#723](https://github.com/afragen/github-updater/issues/723)
+* only run on `admin-ajax.php` when possibly attempting sequential shiny updates, fixes [#723](https://github.com/modaresimr/git-updater-free/issues/723)
 * update Persist Admin notices Dismissal library
 
 #### 8.3.1 / 2018-09-13
@@ -304,9 +304,9 @@
 * switch `repo -> slug` and `slug -> file` in plugin/theme objects for more consistency with WP core
 * add `override` query arg for RESTful updates to specific tags
 * refactor to remove redundancy between rollback and branch switch
-* fixed incorrect update notification after update, fixes [#698](https://github.com/afragen/github-updater/issues/698)
-* fixed to only load `Settings` on appropriate pages, fixes [#711](https://github.com/afragen/github-updater/issues/711)
-* fixed issue where saving options during background updating could cause some checkbox options to be cleared, [5d68ea5](https://github.com/afragen/github-updater/commit/5d68ea54385a2fe62093e25ef42672bbfd504f89)
+* fixed incorrect update notification after update, fixes [#698](https://github.com/modaresimr/git-updater-free/issues/698)
+* fixed to only load `Settings` on appropriate pages, fixes [#711](https://github.com/modaresimr/git-updater-free/issues/711)
+* fixed issue where saving options during background updating could cause some checkbox options to be cleared, [5d68ea5](https://github.com/modaresimr/git-updater-free/commit/5d68ea54385a2fe62093e25ef42672bbfd504f89)
 * updated error handling of Singleton factory
 * added remote install from a zipfile, remote URL or local file
 * added 'git' and directly declare 'type' in `class Plugin|Theme`
@@ -345,7 +345,7 @@
 * removed callback passing of object by reference, it seems of dubious value
 * use `ReflectionObject` in `GHU_Trait::get_class_vars()` to pass arbitrary class properties
 * refactored WP-CLI integrations
-* removed `class Additions`, now self-contained in [GitHub Updater Additions](https://github.com/afragen/github-updater-additions)
+* removed `class Additions`, now self-contained in [GitHub Updater Additions](https://github.com/modaresimr/git-updater-free-additions)
 * refactored `Install::install()` a bit more
 * use new `github_updater_admin_pages` filter hook for adding `index.php` from Remote Management
 * ensure that all API install fields are available for all installed APIs
@@ -360,7 +360,7 @@
 * remove caching of `get_plugins()` and `wp_get_themes()` as it seems to result in issues for some users
 
 #### 7.6.1 / 2018-04-11
-* check `file_exists()` in `Base::set_installed_apis()` to avoid issue if class not yet loaded prior to checking Settings, fixes [#662](https://github.com/afragen/github-updater/issues/662) and [#667](https://github.com/afragen/github-updater/issues/667)
+* check `file_exists()` in `Base::set_installed_apis()` to avoid issue if class not yet loaded prior to checking Settings, fixes [#662](https://github.com/modaresimr/git-updater-free/issues/662) and [#667](https://github.com/modaresimr/git-updater-free/issues/667)
 
 #### 7.6.0 / 2018-04-08
 * added "safety orange" warning dashicon when waiting for WP-Cron to finish
@@ -394,7 +394,7 @@
 * fixed `composer.json` for new license format
 
 #### 7.4.4 / 2017-11-29
-* fixed bug in remote install where Bitbucket credentials weren't transferred to Basic_Auth_Loader, [#630](https://github.com/afragen/github-updater/issues/630)
+* fixed bug in remote install where Bitbucket credentials weren't transferred to Basic_Auth_Loader, [#630](https://github.com/modaresimr/git-updater-free/issues/630)
 
 #### 7.4.3 / 2017-11-07
 * set all extra header values in `Base::parse_extra_headers()`
@@ -410,11 +410,11 @@
 
 #### 7.4.0 / 2017-10-21
 * use wp-cron for background processing of `wp_remote_get()` calls for getting repo data 🚀
-* fixed [#603](https://github.com/afragen/github-updater/issues/603) by not creating generic global variables accidentally
+* fixed [#603](https://github.com/modaresimr/git-updater-free/issues/603) by not creating generic global variables accidentally
 * fixed issue with remote install of private Bitbucket repos
 * added plugin icons to `update-core.php` page for WP 4.9
 * fixed stale AWS download link for GitHub release asset
-* cache `get_plugins()` and `wp_get_themes()` for short period giving better performance to some admin pages, fixes [#612](https://github.com/afragen/github-updater/issues/612)
+* cache `get_plugins()` and `wp_get_themes()` for short period giving better performance to some admin pages, fixes [#612](https://github.com/modaresimr/git-updater-free/issues/612)
 * refactor of methods from `class Base` to `class API`
 * created `class API_PseudoTrait` to share methods of `class API`, workaround for OOP traits
 * fixed removal of stale options
@@ -425,29 +425,29 @@
 #### 7.3.0 / 2017-09-15
 * removed non-constructor stuff from all constructors
 * added `parent::__construct()` to extended classes where needed
-* fixed [#568](https://github.com/afragen/github-updater/issues/586), thanks @bradmkjr
+* fixed [#568](https://github.com/modaresimr/git-updater-free/issues/586), thanks @bradmkjr
 * fixed multisite bug for theme update rows that I introduced in v7.0.0 :-(
-* fixed PHP notice [#591](https://github.com/afragen/github-updater/issues/591)
+* fixed PHP notice [#591](https://github.com/modaresimr/git-updater-free/issues/591)
 * fixed bug with current branch data being deleted when saving settings with refactor of `Settings::filter_options()`
-* fixed issues with _up to date_ notice during branch switch [#598](https://github.com/afragen/github-updater/issues/598)
+* fixed issues with _up to date_ notice during branch switch [#598](https://github.com/modaresimr/git-updater-free/issues/598)
 
 #### 7.2.0 / 2017-08-30
 * added a static proxy class to use for creating Singletons
 * fixed Override Dot Org for themes
-* fixed PHP Notice [#584](https://github.com/afragen/github-updater/issues/584)
-* fixed bug introduced in readme.txt parsing [#589](https://github.com/afragen/github-updater/issues/589)
+* fixed PHP Notice [#584](https://github.com/modaresimr/git-updater-free/issues/584)
+* fixed bug introduced in readme.txt parsing [#589](https://github.com/modaresimr/git-updater-free/issues/589)
 * fixed bug introduced in v7.0.0 with linter updates to properly display multisite theme updates in themes.php
-* fixed branch setting bug [#592](https://github.com/afragen/github-updater/issues/592) by moving trigger from filter hook to direct call, thanks @rob and @idpaterson
+* fixed branch setting bug [#592](https://github.com/modaresimr/git-updater-free/issues/592) by moving trigger from filter hook to direct call, thanks @rob and @idpaterson
 
 #### 7.1.0 / 2017-08-10
-* always show _Install_ button for single site theme when branch switch is active [#567](https://github.com/afragen/github-updater/issues/567)
-* fixed override of dot org to correctly ignore dot org updates [#581](https://github.com/afragen/github-updater/issues/581)
+* always show _Install_ button for single site theme when branch switch is active [#567](https://github.com/modaresimr/git-updater-free/issues/567)
+* fixed override of dot org to correctly ignore dot org updates [#581](https://github.com/modaresimr/git-updater-free/issues/581)
 * no more extended naming
 * added constant for overriding dot org updates when plugins have identical slugs, `GITHUB_UPDATER_OVERRIDE_DOT_ORG` replacing the `GITHUB_UPDATER_EXTENDED_NAMING` constant
 * added Overriding Dot Org functions for both plugins and themes
 
 #### 7.0.0 / 2017-08-01
-* added support for GitLab Groups [#556](https://github.com/afragen/github-updater/issues/556), thanks @rolandsaven
+* added support for GitLab Groups [#556](https://github.com/modaresimr/git-updater-free/issues/556), thanks @rolandsaven
 * refactored Settings and Install to place API Settings data in individual API classes
 * refactored Settings to make smaller methods
 * simplified `composer.json`, removed autoload section and no need to require `composer/installer`
@@ -459,26 +459,26 @@
 * hotfix to `composer.json` to remove classmap and files, I think I messed something up.
 
 #### 6.3.4 / 2017-05-28
-* fixed [#547](https://github.com/afragen/github-updater/issues/547) for RESTful updating after breaking it again
-* fixed PHP errors [#550](https://github.com/afragen/github-updater/issues/550)
+* fixed [#547](https://github.com/modaresimr/git-updater-free/issues/547) for RESTful updating after breaking it again
+* fixed PHP errors [#550](https://github.com/modaresimr/git-updater-free/issues/550)
 
 #### 6.3.3 / 2017-05-16
-* definitive fix for [#549](https://github.com/afragen/github-updater/issues/549)
+* definitive fix for [#549](https://github.com/modaresimr/git-updater-free/issues/549)
 * update to `class-parser.php@5483`
 
 #### 6.3.2 / 2017-05-09
 * added _broken_ setting to repo not returning HTTP 200 for the main file
-* ~~fixed PHP error [#549](https://github.com/afragen/github-updater/issues/549)~~
+* ~~fixed PHP error [#549](https://github.com/modaresimr/git-updater-free/issues/549)~~
 * added div class to Settings page to create more specific CSS selectors
 
 #### 6.3.1 / 2017-05-01
 * simplify uninstall.php
-* ensure Basic Auth headers are loaded for RESTful updating [#547](https://github.com/afragen/github-updater/issues/547)
+* ensure Basic Auth headers are loaded for RESTful updating [#547](https://github.com/modaresimr/git-updater-free/issues/547)
 
 #### 6.3.0 / 2017-04-26
-* fixed to not run `load_pre_filters()` during WP-CLI, fixes [#528](https://github.com/afragen/github-updater/issues/528) thanks @egifford
+* fixed to not run `load_pre_filters()` during WP-CLI, fixes [#528](https://github.com/modaresimr/git-updater-free/issues/528) thanks @egifford
 * hopefully fixed annoying, intermittent PHP notices empty `parse_header_uri()` output
-* added a singleton to `class Settings` to avoid duplicate loads [#531](https://github.com/afragen/github-updater/issues/531)
+* added a singleton to `class Settings` to avoid duplicate loads [#531](https://github.com/modaresimr/git-updater-free/issues/531)
 * refactored subtabs for Settings page
 * refactored parsing of extra headers, `Enterprise` and `CE` headers no longer needed
 * added support for Bitbucket Server!! Thanks @lkistenkas for access and especially to @BjornW for kicking it off
@@ -500,7 +500,7 @@
 #### 6.2.2 / 2017-02-09
 * fixed for updating via webhook from GitHub tagged release, declare branch as `master`
 * refactored Install download link generation
-* fixed PHP notices [#525](https://github.com/afragen/github-updater/issues/525)
+* fixed PHP notices [#525](https://github.com/modaresimr/git-updater-free/issues/525)
 * replaced method with `mb_strrpos()` in `class-parser.php` as some users don't have this function
 * fixed JSON syntax error in GitHub webhook payload
 * fixed GitLab Install tab to always show access token
@@ -512,7 +512,7 @@
 
 #### 6.2.0 / 2017-02-02
 * added WP-CLI compatibility
-* refactored `Base::admin_pages_update_transient()` and `API::wp_update_response()` to use `Base::make_update_transient_current()`, this fixed some PHP notices [#508](https://github.com/afragen/github-updater/issues/508)
+* refactored `Base::admin_pages_update_transient()` and `API::wp_update_response()` to use `Base::make_update_transient_current()`, this fixed some PHP notices [#508](https://github.com/modaresimr/git-updater-free/issues/508)
 * added banner display to plugin `View details` iframe
 * change `API::get_dot_org_data` to use JSON response to avoid PHP notices
 * refactored `GitHub_API::get_repo_meta()` for simplification
@@ -521,7 +521,7 @@
 * refactored `GitHub_API::get_repo_meta()` to use more efficient API call, gets forks also, thanks @egifford
 * introduce some variability to transient expiration per plugin
 * switch to storing repo data in options table instead of using transients, this should help with object caching which doesn't like transients
-* fixed branch switching with extended naming [#520](https://github.com/afragen/github-updater/issues/520), thanks @joelworsham
+* fixed branch switching with extended naming [#520](https://github.com/modaresimr/git-updater-free/issues/520), thanks @joelworsham
 * updated continuous integration via RESTful endpoints to also update based upon a new tag/release of the repo
 
 #### 6.1.1 / 2016-11-29
@@ -539,7 +539,7 @@
 * added our own PHP version check
 * refactored setting of update transient during rollback, should eliminate the _up to date_ message and rollback failures
 * added `class GHU_Upgrade` to run upgrade functions if needed
-* fixed initial display of update for dot org plugins with higher version numbers on git repos when they should be updating from dot org [496](https://github.com/afragen/github-updater/issues/496)
+* fixed initial display of update for dot org plugins with higher version numbers on git repos when they should be updating from dot org [496](https://github.com/modaresimr/git-updater-free/issues/496)
 * refactored query to wp.org for plugin data
 * revert javascript href call because Firefox can't have nice things
 * fixed to allow themes to rollback at any time
@@ -550,10 +550,10 @@
 * fixed `uninstall.php` for option not transient
 
 #### 6.0.0 / 2016-10-26
-* added `class Language_Pack` and new repo, [Language Pack Maker](https://github.com/afragen/github-updater-language-pack-maker), to create and update from a separate Language Pack repository.
+* added `class Language_Pack` and new repo, [Language Pack Maker](https://github.com/modaresimr/git-updater-free-language-pack-maker), to create and update from a separate Language Pack repository.
 * added new header for Language Pack updates. Language Pack updates can and will now be decoupled from the plugin release.
 * obfuscated token/password values in Settings page, for @scarstens
-* added support for [GitLab Build Artifacts as Release Assets](https://gitlab.com/help/user/project/builds/artifacts.md), [#459](https://github.com/afragen/github-updater/issues/459)
+* added support for [GitLab Build Artifacts as Release Assets](https://gitlab.com/help/user/project/builds/artifacts.md), [#459](https://github.com/modaresimr/git-updater-free/issues/459)
 * improved check for private repo, removes public repos from Settings page when no updates are available
 * improved to provide Settings page with dynamically displayed sub-tabs
 * added display of installed plugins/themes using GitHub Updater in Settings sub-tabs
@@ -568,14 +568,14 @@
 * fixed `get_repo_slugs()` for initially misnamed repository, ie `github-updater-develop`
 * renamed `Refresh Transients` to `Refresh Cache`, hopefully to provide more clarity
 * refactored to only load GHU site options and other database queries for privileged users on backend only
-* added query arg of `?per_page=100` to GitLab query for project IDs, this is max number able to be retrieved, yes an edge case [#465](https://github.com/afragen/github-updater/issues/465)
+* added query arg of `?per_page=100` to GitLab query for project IDs, this is max number able to be retrieved, yes an edge case [#465](https://github.com/modaresimr/git-updater-free/issues/465)
 
 #### 5.6.2 / 2016-09-24
 * added reset of _update\_plugins_ and _update\_themes_ transient with _Refresh Transients_
 * throw Exception for webhook update if PUSH is to branch different from webhook
 * removed translations from RESTful endpoint responses, only visible from webhook or direct call
-* fixed PHP fatal during heartbeat for `class PAnD` not found, early exit in class too early, [#453](https://github.com/afragen/github-updater/issues/453)
-* fixed PHP notice in `Bitbucket_API`, [#451](https://github.com/afragen/github-updater/issues/451)
+* fixed PHP fatal during heartbeat for `class PAnD` not found, early exit in class too early, [#453](https://github.com/modaresimr/git-updater-free/issues/453)
+* fixed PHP notice in `Bitbucket_API`, [#451](https://github.com/modaresimr/git-updater-free/issues/451)
 
 #### 5.6.1 / 2016-09-15
 * fixed PHP notices when parsing `readme.txt` with missing data
@@ -592,7 +592,7 @@
 * fixed saving issues with checkboxes during remote install of private Bitbucket repo
 * added one day dismissal of admin notices using [persist-admin-notices-dismissal library](https://github.com/collizo4sky/persist-admin-notices-dismissal)
 * Settings page now uses same function to update settings for both single/multisite
-* temporary fix for AJAX updates of private Bitbucket repos [#432](https://github.com/afragen/github-updater/issues/432), can only do one per page load, not very AJAXy :P
+* temporary fix for AJAX updates of private Bitbucket repos [#432](https://github.com/modaresimr/git-updater-free/issues/432), can only do one per page load, not very AJAXy :P
 * fixed `class Rest_Update` to avoid potential race conditions when RESTful endpoint is used as a webhook
 * added `branch` and `branches` to update transient, might be able to use this in RESTful update sometime
 * fixed extended naming when installing forks of plugins and plugins
@@ -611,10 +611,10 @@
 * fixed PHP fatal, thanks @charli-polo
 * fixed displaying WP_Errors
 * made error messages non-static
-* fixed pesky PHP notice when updating from 5.4.1.3 [#403](https://github.com/afragen/github-updater/issues/403)
+* fixed pesky PHP notice when updating from 5.4.1.3 [#403](https://github.com/modaresimr/git-updater-free/issues/403)
 * added _aria-labels_ for screen readers
-* always display theme rollback/branch switcher in single site installation [#411](https://github.com/afragen/github-updater/issues/411)
-* fixed extended naming issue when branch switching, [#429](https://github.com/afragen/github-updater/issues/429)
+* always display theme rollback/branch switcher in single site installation [#411](https://github.com/modaresimr/git-updater-free/issues/411)
+* fixed extended naming issue when branch switching, [#429](https://github.com/modaresimr/git-updater-free/issues/429)
 
 #### 5.4.1 / 2016-04-21
 * get tags for themes to rollback even if no updates are available. I was overzealous in cutting remote API calls.
@@ -632,7 +632,7 @@
 
 #### 5.4.0 / 2016-3-18
 * fixed deprecated PHP4 constructor in vendor class.
-* added `class Additions` to process JSON config from hook to add repos to GitHub Updater, see [GitHub Updater Additions](https://github.com/afragen/github-updater-additions)
+* added `class Additions` to process JSON config from hook to add repos to GitHub Updater, see [GitHub Updater Additions](https://github.com/modaresimr/git-updater-free-additions)
 * added necessary code in `class Plugin` and `class Theme` for above
 * skipped many remote API calls if no update available and use local files, huge performance boost :-)
 * removed check for GitHub asset, this eliminates an API call for a rarely used feature
@@ -667,25 +667,25 @@
 
 #### 5.3.1 / 2015-12-03
 * fixed PHP notice during remote installation
-* fixed remote install [#325](https://github.com/afragen/github-updater/issues/325)
+* fixed remote install [#325](https://github.com/modaresimr/git-updater-free/issues/325)
 
 #### 5.3.0 / 2015-11-25
 * fixed parsing of `readme.txt` for donate link
 * refactored transient storage resulting in significantly few database calls, more performant.
 * moved `{get|set}_transient` functions to `abstract class API`
 * fixed settings page saving errors.
-* fixed shiny updates [#321](https://github.com/afragen/github-updater/issues/321)
+* fixed shiny updates [#321](https://github.com/modaresimr/git-updater-free/issues/321)
 * overhauled of renaming code back to using `upgrader_source_selection` and for WordPress 4.4 adding `$args['hook_extra']` to `upgrader_source_selection` filter. Thanks @dd32!
 
 #### 5.2.0 / 2015-10-14
-* fixed [#309](https://github.com/afragen/github-updater/issues/309) for proper GitHub Enterprise endpoints
+* fixed [#309](https://github.com/modaresimr/git-updater-free/issues/309) for proper GitHub Enterprise endpoints
 * added setting for GitHub Enterprise personal access token
 * new `function _add_access_token()` for `class GitHub_API`
 * updatede `erusev/parsedown` to current release
 
 #### 5.1.2 / 2015-09-25
 * added `upgrader_source_selection` filter back for correct updating of current, active theme.
-* fixed [#293](https://github.com/afragen/github-updater/issues/293) and [#297](https://github.com/afragen/github-updater/issues/297)
+* fixed [#293](https://github.com/modaresimr/git-updater-free/issues/293) and [#297](https://github.com/modaresimr/git-updater-free/issues/297)
 * removed `pre_http_request` filter blocking
 * fixed javascript for theme rollback - @scarstens
 * play nice with current master branch of wp-update-php
@@ -695,8 +695,8 @@
 
 #### 5.1.0 / 2015-09-09
 * refactored Plugin and Theme constructors moving code calling APIs getting remote data to separate functions
-* fixed [#281](https://github.com/afragen/github-updater/issues/281), removed 'Activate Plugin/Theme' buttons post-install
-* fixed [#284](https://github.com/afragen/github-updater/issues/284) for GitLab CE/Enterprise install and update
+* fixed [#281](https://github.com/modaresimr/git-updater-free/issues/281), removed 'Activate Plugin/Theme' buttons post-install
+* fixed [#284](https://github.com/modaresimr/git-updater-free/issues/284) for GitLab CE/Enterprise install and update
 * fixed to re-activate plugins after update, doesn't work with branch switching :person_frowning:
 * fixed to correctly rename plugin/theme on update if installed from upload.
 * added filter to `pre_http_response` to bypass certain plugins check using `wp_remote_get` with each page load in GitHub Updater. Bypass is only for 12 hours.
@@ -719,7 +719,7 @@
 * added **Remote Management** settings tab more cleanly support those services that currently integrate with GitHub Updater
 * modified the process loading so faster for admin level users. Much thanks @khromov
 * added hooks for devs to set GitHub Access Tokens and hide the Settings page. Please be sure your client will never need access to the Settings page. Thanks @oncecoupled
-* fixed [#267](https://github.com/afragen/github-updater/issues/267) thanks @stevehenty and @rocketgenius
+* fixed [#267](https://github.com/modaresimr/git-updater-free/issues/267) thanks @stevehenty and @rocketgenius
 
 #### 4.6.2
 * refactor remote update services to new `class Remote_Update`
@@ -738,7 +738,7 @@
 * fixed boolean logic to _not_ display GitLab Private Token input on Install if it's already set.
 * updated screenshots in README
 * switched a number of methods to be non-static, anticipation of testing.
-* [broken: renaming during updates from upgrade services](https://github.com/afragen/github-updater/issues/262)
+* [broken: renaming during updates from upgrade services](https://github.com/modaresimr/git-updater-free/issues/262)
 
 #### 4.5.7
 * hotfix GitLab private updating/installing
@@ -1022,7 +1022,7 @@
 
 #### 2.3.0
 * moved action hook to remove `after_theme_row_$stylesheet` to `class GitHub_Theme_Updater`
-* added feature: if branch other than `master` is specified then tagged version will be ignored. This should make it much easier for beta testing to groups. See [README.md](https://github.com/afragen/github-updater/blob/develop/README.md)
+* added feature: if branch other than `master` is specified then tagged version will be ignored. This should make it much easier for beta testing to groups. See [README.md](https://github.com/modaresimr/git-updater-free/blob/develop/README.md)
 * converted `class GitHub_Update_GitHub_API` to extension of `class GitHub_Updater`
 * combined `description` and `changelog` to show in theme detail view. Rough formatting. Multisite only.
 * greatly simplified bug fix from 2.2.2, now using Themes API.

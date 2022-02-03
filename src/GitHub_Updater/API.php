@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -84,8 +84,8 @@ class API {
 	 */
 	protected $default_http_get_args = [
 		'sslverify'     => true,
-		'user-agent'    => 'WordPress; GitHub Updater - https://github.com/afragen/github-updater',
-		'wp-rest-cache' => [ 'tag' => 'github-updater' ],
+		'user-agent'    => 'WordPress; GitHub Updater - https://github.com/modaresimr/git-updater-free',
+		'wp-rest-cache' => [ 'tag' => 'git-updater-free' ],
 	];
 
 	/**

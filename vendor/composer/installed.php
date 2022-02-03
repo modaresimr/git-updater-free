@@ -7,11 +7,11 @@
     array (
     ),
     'reference' => 'e03aeba7d40d42ffd11766707df79bb0284ee518',
-    'name' => 'afragen/github-updater',
+    'name' => 'modaresimr/git-updater-free',
   ),
   'versions' => 
   array (
-    'afragen/github-updater' => 
+    'modaresimr/git-updater-free' => 
     array (
       'pretty_version' => 'dev-master',
       'version' => 'dev-master',

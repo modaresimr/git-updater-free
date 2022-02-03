@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -21,7 +21,7 @@ if ( ! defined( 'WPINC' ) ) {
 add_action(
 	'init',
 	function () {
-		load_plugin_textdomain( 'github-updater' );
+		load_plugin_textdomain( 'git-updater-free' );
 	}
 );
 
@@ -66,7 +66,7 @@ class Bootstrap {
 		$message = sprintf(
 			/* translators: %s: documentation URL */
 			__( 'GitHub Updater is missing required composer dependencies. <a href="%s" target="_blank" rel="noopenernoreferer">Learn more.</a>', 'github_updater' ),
-			'https://github.com/afragen/github-updater/wiki/Installation'
+			'https://github.com/modaresimr/git-updater-free/wiki/Installation'
 		);
 
 		wp_die( wp_kses_post( $message ) );
@@ -109,7 +109,7 @@ class Bootstrap {
 					echo '<div class="error notice is-dismissible"><p>';
 					printf(
 						/* translators: 1: minimum PHP version required */
-						wp_kses_post( __( 'GitHub Updater cannot run on PHP versions older than %1$s.', 'github-updater' ) ),
+						wp_kses_post( __( 'GitHub Updater cannot run on PHP versions older than %1$s.', 'git-updater-free' ) ),
 						'5.6'
 					);
 					echo '</p></div>';

@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -779,7 +779,7 @@ class Base {
 		 * Insert repositories added via GitHub Updater Additions plugin.
 		 *
 		 * @see GitHub Updater's Plugin or Theme class for definition.
-		 * @link https://github.com/afragen/github-updater-additions
+		 * @link https://github.com/modaresimr/git-updater-free-additions
 		 */
 		$additions = apply_filters( 'github_updater_additions', null, [], $type );
 		foreach ( (array) $additions as $slug => $headers ) {

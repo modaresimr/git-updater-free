@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -35,7 +35,7 @@ class Settings {
 	 *
 	 * @var string
 	 */
-	private $ghu_plugin_name = 'github-updater/github-updater.php';
+	private $ghu_plugin_name = 'git-updater-free/git-updater-free.php';
 
 	/**
 	 * Holds boolean on whether or not the repo requires authentication.
@@ -248,7 +248,7 @@ class Settings {
 		$logo = plugins_url( basename( constant( __NAMESPACE__ . '\DIR' ) ) . '/assets/GitHub_Updater_logo_small.png' ); ?>
 		<div class="wrap github-updater-settings">
 			<h1>
-				<a href="https://github.com/afragen/github-updater" target="_blank"><img src="<?php esc_attr_e( $logo ); ?>" alt="GitHub Updater logo" /></a><br>
+				<a href="https://github.com/modaresimr/git-updater-free" target="_blank"><img src="<?php esc_attr_e( $logo ); ?>" alt="GitHub Updater logo" /></a><br>
 				<?php esc_html_e( 'GitHub Updater', 'github-updater' ); ?>
 			</h1>
 			<?php $this->options_tabs(); ?>

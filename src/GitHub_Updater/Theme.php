@@ -4,7 +4,7 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
  * @package   github-updater
  */
 
@@ -100,7 +100,7 @@ class Theme {
 	 * This is needed in case `wp_get_theme()` is called in earlier or in a mu-plugin.
 	 * This action results in the extra headers not being added.
 	 *
-	 * @link https://github.com/afragen/github-updater/issues/586
+	 * @link https://github.com/modaresimr/git-updater-free/issues/586
 	 */
 	private function delete_current_theme_cache() {
 		$cache_hash = md5( get_stylesheet_directory() );

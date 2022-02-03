@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater\API;
@@ -365,7 +365,7 @@ class Bitbucket_API extends API implements API_Interface {
 	public function add_settings( $auth_required ) {
 		add_settings_section(
 			'bitbucket_token',
-			esc_html__( 'Bitbucket Pseudo-Token', 'github-updater' ),
+			esc_html__( 'Bitbucket Pseudo-Token', 'git-updater-free' ),
 			[ $this, 'print_section_bitbucket_token' ],
 			'github_updater_bitbucket_install_settings'
 		);

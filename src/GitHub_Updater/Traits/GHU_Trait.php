@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater\Traits;
@@ -663,7 +663,7 @@ trait GHU_Trait {
 		}
 
 		$dir         = constant( str_replace( '\Traits', '', __NAMESPACE__ . '\DIR' ) );
-		$plugin_data = \get_plugin_data( $dir . '/github-updater.php' );
+		$plugin_data = \get_plugin_data( $dir . '/git-updater-free.php' );
 
 		return $plugin_data['Version'];
 	}
@@ -673,7 +673,7 @@ trait GHU_Trait {
 	 *
 	 * This is more versatile than `$wp_filesystem->move()` for FS_METHOD 'direct'.
 	 * It moves/renames directories as well as files.
-	 * Fix for https://github.com/afragen/github-updater/issues/826,
+	 * Fix for https://github.com/modaresimr/git-updater-free/issues/826,
 	 * strange failure of `rename()`.
 	 *
 	 * @param string $source      File path of source.

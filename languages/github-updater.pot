@@ -21,7 +21,7 @@ msgid "GitHub Updater"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://github.com/afragen/github-updater"
+msgid "https://github.com/modaresimr/git-updater-free"
 msgstr ""
 
 #. Description of the plugin

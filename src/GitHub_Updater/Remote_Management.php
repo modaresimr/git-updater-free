@@ -4,8 +4,8 @@
  *
  * @author    Andy Fragen
  * @license   GPL-2.0+
- * @link      https://github.com/afragen/github-updater
- * @package   github-updater
+ * @link      https://github.com/modaresimr/git-updater-free
+ * @package   git-updater-free
  */
 
 namespace Fragen\GitHub_Updater;
@@ -240,7 +240,7 @@ class Remote_Management {
 				/* translators: 1: Link to wiki, 2: RESTful API URL */
 				__( 'Please refer to the <a href="%1$s">wiki</a> for complete list of attributes. REST API endpoints for webhook updating begin at: %2$s', 'github-updater' )
 			),
-			'https://github.com/afragen/github-updater/wiki/Remote-Management---RESTful-Endpoints',
+			'https://github.com/modaresimr/git-updater-free/wiki/Remote-Management---RESTful-Endpoints',
 			'<br><span style="font-family:monospace;">' . esc_url( $api_url ) . '</span>'
 		);
 		echo '</p>';
