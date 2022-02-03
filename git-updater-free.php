@@ -12,7 +12,7 @@
  * Plugin Name:       Git Updater Free
  * Plugin URI:        https://github.com/modaresimr/git-updater-free
  * Description:       A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted plugins, themes, and language packs. It also allows for remote installation of plugins or themes into WordPress.
- * Version:           20.0.2
+ * Version:           20.0.1
  * Author:            Ali Modaresi
  * License:           GNU General Public License v2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
