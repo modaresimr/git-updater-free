@@ -839,12 +839,18 @@ class Settings {
 			$is_broken  = $data['broken'] ? $broken : null;
 			$override   = $this->override_dot_org( $data['type'], $data );
 			$is_dot_org = $data['dot_org'] && ! $override ? $dot_org : null;
-			$update_url = add_query_arg(
-				[  'key'=>get_site_option( 'github_updater_api_key' ),
-					$data["type"] =>  $data['slug']],
-				home_url( 'wp-json/' . $this->get_class_vars( 'REST_API', 'namespace' ) . '/update/' )
-			);
-			printf( '<p>' . wp_kses_post( $dashicon . $data['name'] . $is_private . $is_dot_org . $is_broken ) . " <a href='$update_url'>force update</a></p>" );
+			if ( current_user_can( "install_$data['type']s" ) ) {
+				$install_tabs['github_updater_install_plugin'] = esc_html__( 'Install Plugin', 'github-updater' );
+			}
+			
+			$update_url =current_user_can(  'install_'. $data['type']. 's' )  //install_plugins or install_themes
+				? 	add_query_arg([  
+						'key'=>get_site_option( 'github_updater_api_key' ),
+						$data["type"] =>  $data['slug']
+					],home_url( 'wp-json/' . $this->get_class_vars( 'REST_API', 'namespace' ) . '/update/' ))
+				:"";
+			$update_huml=$update_url?" <a href='$update_url'>force update</a>":"";
+			printf( '<p>' . wp_kses_post( $dashicon . $data['name'] . $is_private . $is_dot_org . $is_broken ) . " $update_huml </p>" );
 		}
 	}
 }
