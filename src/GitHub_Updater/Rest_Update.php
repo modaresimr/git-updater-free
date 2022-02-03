@@ -222,10 +222,8 @@ class Rest_Update {
 
 		$start = microtime( true );
 		try {
-			if ( ! $key
-				|| get_site_option( 'github_updater_api_key' ) !== $key
-			) {
-				throw new \UnexpectedValueException( 'Bad API key.' );
+			if ( ! $key || get_site_option( 'github_updater_api_key' ) !== $key ) {
+					throw new \UnexpectedValueException( 'Bad API key.' );
 			}
 
 			/**

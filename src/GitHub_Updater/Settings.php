@@ -839,7 +839,12 @@ class Settings {
 			$is_broken  = $data['broken'] ? $broken : null;
 			$override   = $this->override_dot_org( $data['type'], $data );
 			$is_dot_org = $data['dot_org'] && ! $override ? $dot_org : null;
-			printf( '<p>' . wp_kses_post( $dashicon . $data['name'] . $is_private . $is_dot_org . $is_broken ) . '</p>' );
+			$update_url = add_query_arg(
+				[  'key'=>get_site_option( 'github_updater_api_key' ),
+					$data["type"] =>  $data['slug']],
+				home_url( 'wp-json/' . $this->get_class_vars( 'REST_API', 'namespace' ) . '/update/' )
+			);
+			printf( '<p>' . wp_kses_post( $dashicon . $data['name'] . $is_private . $is_dot_org . $is_broken ) . " <a href='$update_url'>force update</a></p>" );
 		}
 	}
 }
